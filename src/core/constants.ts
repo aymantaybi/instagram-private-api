@@ -14,7 +14,7 @@ export const FACEBOOK_ORCA_APPLICATION_ID = '124024574287414';
 
 export const BLOKS_VERSION_ID = '1b030ce63a06c25f3e4de6aaaf6802fe1e76401bc5ab6e5fb85ed6c2d333e0c7';
 
-export const HOSTNAME = 'i.instagram.com';
-export const WEB_HOSTNAME = 'www.instagram.com';
+export const HOSTNAME = process.env.IG_HOSTNAME || 'i.instagram.com';
+export const WEB_HOSTNAME = process.env.IG_WEB_HOSTNAME || 'www.instagram.com';
 export const HOST = `https://${HOSTNAME}/`;
 export const WEBHOST = `https://${WEB_HOSTNAME}/`;

@@ -20,6 +20,7 @@ import {
 } from '../errors';
 import { IgResponse } from '../types';
 import JSONbigInt = require('json-bigint');
+import { HOST } from './constants';
 
 const JSONbigString = JSONbigInt({ storeAsString: true });
 
@@ -60,7 +61,7 @@ export class Request {
     const options = defaultsDeep(
       userOptions,
       {
-        baseUrl: 'https://i.instagram.com/',
+        baseUrl: HOST,
         resolveWithFullResponse: true,
         proxy: this.client.state.proxyUrl,
         simple: false,
