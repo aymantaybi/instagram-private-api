@@ -17,5 +17,5 @@ export const BLOKS_VERSION_ID = '1b030ce63a06c25f3e4de6aaaf6802fe1e76401bc5ab6e5
 export const HOSTNAME = process.env.IG_HOSTNAME || process.env.NEXT_PUBLIC_IG_HOSTNAME || 'i.instagram.com';
 export const WEB_HOSTNAME =
   process.env.IG_WEB_HOSTNAME || process.env.NEXT_PUBLIC_IG_WEB_HOSTNAME || 'www.instagram.com';
-export const HOST = `http://${HOSTNAME}/`;
-export const WEBHOST = `http://${WEB_HOSTNAME}/`;
+export const HOST = `https://${HOSTNAME}/`;
+export const WEBHOST = `https://${WEB_HOSTNAME}/`;
